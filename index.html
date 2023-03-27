@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>atividadezinha gostosa</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="display">
-        <div class="container">
-            <nav>
-                <img src="images/images/logo.svg" alt="logo">
-            </nav>
-            <div>
-                <section class="section">
-                    <div style="width: 260px; margin:auto; text-align:initial;">
-                        <div>
-                            <div style="display: inline-flex; height:50px; align-items:center;">
-                                <img src="images/images/log-in.svg" alt="login" style="height: 24px; width:24px;">
-                                <h2 class="" style="font-size: 20px; margin-left: 8px; color:var(--text-title)">Faça seu Login</h2>
-                            </div>
-                            <h3 style="font-size: 12px; color:var(--text-base); margin:0;">Entre com suas informações de cadastro</h3>
-                        </div>
-    
-                        <div class="email" style="margin: 10px 0px;">
-                            <h3>E-mail</h3>
-                            <div class="input-email">
-                                <input type="text" placeholder="Digite sua senha" id="usuario"  name="usuario"/>
-                                <div class="icone icone-user"></div>
-                            </div>
-                        </div> 
-    
-                        <div class="senha" style="margin: 5px 0px;">
-                            <h3 style="margin: 10px 0px;">Senha</h3>
-                            <form method="post" id="form">
-                                <div class="input-senha">
-                                    <input type="text" placeholder="Digite sua senha" id="usuario"  name="usuario"/>
-                                    <div class="icone icone-user"></div>
-                                    <span><img src="images/images/log-in.svg"></span>
-                                </div>
-                            </form>
-                                    
-                                <div style="display: flex; align-items:center; justify-content:space-between;">
-                                    <h4 style="font-size: 12px; color:var(--text-base); margin-right:40px">
-                                        <input type="checkbox" class="input-remenber" style="background-color:var(--background-form)">
-                                        Lembre-me
-                                    </h4>
-                                    <button style="color: var(--primary-color); background-color:var(--background-form); border:none; font-size:12px;">Esqueci minha senha</button>
-                                </div>
-                        </div>
-        
-                        <div class="login">
-                                <div>
-                                    
-                                    <button style="background-color: var(--primary-color); width:250px; height:40px; border:none; border-radius:4px; text-transform:uppercase;">Entrar</button>
-                                    <div style="display: flex; color: var(--primary-color); font-size:12px">
-                                        <div style="margin-top: 10px; display:inline-flex;">
-                                            <h3 style="font-weight: 300; margin-right:3px; ">Não tem uma conta? 
-                                                <h3 style="font-weight:800;"> Registre-se</h3>
-                                            </h3>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    
-                </section>
+      <div class="container">
+        <nav>
+          <img src="images/images/logo.svg" alt="logo" />
+        </nav>
+        <div>
+          <section class="section">
+            <div class="section-content">
+              <div>
+                <div class="login-text">
+                  <img
+                    class="login-img"
+                    src="images/images/log-in.svg"
+                    alt="login"
+                  />
+                  <h2 class="login-title">Faça seu Login</h2>
+                </div>
+                <h3 class="login-description">
+                  Entre com suas informações de cadastro
+                </h3>
+              </div>
+
+              <div class="email">
+                <h3>E-mail</h3>
+                <div class="input-email">
+                  <div class="icone icone-user"></div>
+                  <input
+                    type="text"
+                    placeholder="Digite seu Email"
+                    id="usuario"
+                    name="usuario"
+                  />
+                </div>
+              </div>
+
+              <div class="senha">
+                <h3>Senha</h3>
+                <div class="input-senha">
+                  <div class="icone icone-user"></div>
+                  <input
+                    type="text"
+                    placeholder="Digite sua senha"
+                    id="usuario"
+                    name="usuario"
+                  />
+                  <span><img src="images/images/eye.svg" /></span>
+                </div>
+
+                <div class="password-assets">
+                  <h4>
+                    <input type="checkbox" class="input-remenber" />
+                    <label>Lembre-me</label>
+                  </h4>
+                  <button class="forget-password">Esqueci minha senha</button>
+                </div>
+              </div>
+
+              <div class="login">
+                <div>
+                  <button class="entrar-btn">Entrar</button>
+                  <div class="create-account">
+                    <h3 class="text-create-account">
+                      Não tem uma conta?
+                      <h3 class="register">Registre-se</h3>
+                    </h3>
+                  </div>
+                </div>
+              </div>
             </div>
-           
+          </section>
         </div>
-        <div class="bckgn-image" style="height:649px; width:569px;"></div>
+      </div>
+      <div class="bckgn-image"></div>
     </div>
-        
-</body>
+  </body>
 </html>

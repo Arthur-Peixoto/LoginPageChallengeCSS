@@ -1,51 +1,94 @@
 :root {
-    --text-base: #afb6c2;
-    --text-title: #d4ccb6;
-    --background: #191816;
-    --form-background: #24221f;
-    --primary-color: #ffc632;
-  }
-
-body{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    display: contents;
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
 }
 
-  html{
-    background-color: var(--background);
-  }
-
-  h3{
-    margin: 0;
-  }
-
-.display{
-  display: flex; 
-  height:649px;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: contents;
 }
 
-.container{
-    display: flex;
-    margin: 20px;
+html {
+  background-color: var(--background);
 }
 
-.section{
+h3 {
+  margin: 0;
+}
+
+.display {
+  display: flex;
+  height: 649px;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.section {
   background-color: var(--form-background);
   width: 500px;
   height: 400px;
   margin: 50px;
-  padding: 20px; 
-  text-align:center
+  padding: 20px;
+  text-align: center;
 }
 
-.bckgn-image{
-    background-image: url(images/images/side-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.section-content {
+  width: 260px;
+  margin: auto;
+  text-align: initial;
 }
 
+.login-text {
+  display: flex;
+  align-items: center;
+}
 
+.login-img {
+  height: 24px;
+  width: 24px;
+}
+
+.login-title {
+  font-size: 20px;
+  margin-left: 8px;
+  color: var(--text-title);
+}
+
+.login-description {
+  font-size: 12px;
+  color: var(--text-base);
+  margin: 0;
+}
+
+.email {
+  margin: 10px 0px;
+}
+
+.senha {
+  margin: 5px 0px;
+}
+
+.email h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--text-base);
+  font-size: 16px;
+}
+
+.senha h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--text-base);
+  font-size: 16px;
+}
 
 .input-email {
   position: relative;
@@ -63,62 +106,150 @@ body{
   border: none;
 }
 
-.input-email span img{
-vertical-align: middle  ;
+.input-email span img {
+  vertical-align: middle;
 }
 
-.input-email input:focus, .input-email input:active{
-  border-color:red;
-}
 .input-email .icone {
   position: absolute;
   height: 2rem;
+  width: 32px;
   background-image: url(images/images/mail.svg);
   background-size: cover;
   z-index: 100;
 }
 
-
-.input-email input:focus + div, .input-email input:active + div {
+.input-email:focus + .icone,
+.input-email:active + .icone {
   background-image: url(images/images/mail-focus.svg);
   background-size: cover;
 }
 
-
-  
-
-  .input-senha {
-    position: relative;
-    background-color: var(--form-background);
-    padding: 5px;
-    border: none;
-    border: solid 2px;
+.input-senha {
+  position: relative;
+  background-color: var(--form-background);
+  padding: 5px;
+  border: none;
+  border: solid 2px;
 }
 .input-senha input {
-    position: relative;
-    padding-left: 3.25em;
-    box-sizing: border-box;
-    height: 2rem;
-    background-color: #24221f;
-    border: none;
+  position: relative;
+  padding-left: 3.25em;
+  box-sizing: border-box;
+  height: 2rem;
+  background-color: #24221f;
+  border: none;
 }
 
-.input-senha span img{
-  vertical-align: middle  ;
+.input-senha span img {
+  vertical-align: middle;
 }
 
-.input-senha input:focus, .input-senha input:active{
-    border-color:red;
-}
- .icone {
+.input-senha .icone {
   position: absolute;
   height: 2rem;
-  background-image: url(images/images/mail.svg);
+  width: 32px;
+  background-image: url(images/images/lock.svg);
   background-size: cover;
   z-index: 100;
 }
-.input-senha input:focus + div, .input-senha input:active + div {
-    background-image: url(images/images/lock-focus.svg);
-    background-size: cover;
+.input-senha:focus + .icon,
+.input-senha:active + .icon {
+  background-image: url(images/images/lock-focus.svg);
+  background-size: cover;
+  position: absolute;
+  height: 2rem;
+  width: 32px;
 }
 
+.password-assets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.password-assets h4 {
+  font-size: 12px;
+  color: var(--text-base);
+  margin-right: 40px;
+}
+
+.input-remenber {
+  background-color: var(--background-form);
+}
+
+.input-remenber:checked {
+  background-color: var(--primary-color);
+  background-image: url(images/images/check.svg);
+}
+
+.input-remenber label {
+  color: var(--form-background);
+  display: inline;
+}
+
+.forget-password {
+  color: var(--primary-color);
+  background-color: var(--background-form);
+  border: none;
+  font-size: 12px;
+}
+
+.entrar-btn {
+  background-color: var(--primary-color);
+  font-weight: bold;
+  width: 255px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.create-account {
+  margin-top: 10px;
+  display: inline-flex;
+  display: flex;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+.text-create-account {
+  font-weight: 300;
+  margin-right: 3px;
+}
+
+.register {
+  font-weight: 800;
+  margin-left: 3px;
+}
+
+.bckgn-image {
+  background-image: url(images/images/side-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 649px;
+  width: 569px;
+}
+
+@media (max-width: 420px) {
+  .container {
+    display: grid;
+    margin: 0;
+    align-content: start;
+  }
+
+  .section {
+    width: 250px;
+    margin: 0px 0px 0px 40px;
+    background-color: var(--background);
+  }
+
+  nav {
+    margin: 40px 0px 0px 10px;
+    height: 30px;
+  }
+
+  .bckgn-image {
+    display: none;
+  }
+}
