@@ -1,0 +1,124 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: contents;
+}
+
+  html{
+    background-color: var(--background);
+  }
+
+  h3{
+    margin: 0;
+  }
+
+.display{
+  display: flex; 
+  height:649px;
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+}
+
+.section{
+  background-color: var(--form-background);
+  width: 500px;
+  height: 400px;
+  margin: 50px;
+  padding: 20px; 
+  text-align:center
+}
+
+.bckgn-image{
+    background-image: url(images/images/side-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.input-email {
+  position: relative;
+  background-color: var(--form-background);
+  padding: 5px;
+  border: none;
+  border: solid 2px;
+}
+.input-email input {
+  position: relative;
+  padding-left: 3.25em;
+  box-sizing: border-box;
+  height: 2rem;
+  background-color: #24221f;
+  border: none;
+}
+
+.input-email span img{
+vertical-align: middle  ;
+}
+
+.input-email input:focus, .input-email input:active{
+  border-color:red;
+}
+.input-email .icone {
+  position: absolute;
+  height: 2rem;
+  background-image: url(images/images/mail.svg);
+  background-size: cover;
+  z-index: 100;
+}
+
+
+.input-email input:focus + div, .input-email input:active + div {
+  background-image: url(images/images/mail-focus.svg);
+  background-size: cover;
+}
+
+
+  
+
+  .input-senha {
+    position: relative;
+    background-color: var(--form-background);
+    padding: 5px;
+    border: none;
+    border: solid 2px;
+}
+.input-senha input {
+    position: relative;
+    padding-left: 3.25em;
+    box-sizing: border-box;
+    height: 2rem;
+    background-color: #24221f;
+    border: none;
+}
+
+.input-senha span img{
+  vertical-align: middle  ;
+}
+
+.input-senha input:focus, .input-senha input:active{
+    border-color:red;
+}
+ .icone {
+  position: absolute;
+  height: 2rem;
+  background-image: url(images/images/mail.svg);
+  background-size: cover;
+  z-index: 100;
+}
+.input-senha input:focus + div, .input-senha input:active + div {
+    background-image: url(images/images/lock-focus.svg);
+    background-size: cover;
+}
+
